@@ -1,0 +1,19 @@
+
+{
+  "engine": "node:10_armv7",
+  "type": "translator",
+  "version": "1.0.0",
+  "name": "your_name",
+  "displayName": "Translator",
+  "description": "Translator",
+  "requiredCapabilities": [],
+  "permissions": ["SERVICE:NLP", "SERVICE:PROXY", "FS:WRITE"],
+  "params":{
+    "environment": {
+	"key": "value"
+     },
+     "ports": [],
+     "volumes": []
+  },
+  "logo": "icon.png"
+}

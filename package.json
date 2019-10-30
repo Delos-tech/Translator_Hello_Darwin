@@ -1,0 +1,22 @@
+{
+  "name": "translator-thing-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "nodemon": "MODE=development VERBOSE=debug nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async-mqtt": "^2.0.0",
+    "darwin-translator-sdk": "git+ssh://git@github.com/DelosDarwin/node-darwin-translator-sdk.git",
+    "livr": "^2.2.4",
+    "express": "~4.16.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.18.7"
+  }
+}

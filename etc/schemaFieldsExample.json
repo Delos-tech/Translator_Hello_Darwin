@@ -1,0 +1,202 @@
+{
+  "schema": {
+    "fields": [
+      {
+        "name": "urlExample",
+        "label": "URL",
+        "type": "url",
+        "disabled": false,
+        "placeholder": "url example",
+        "defaultValue": ""
+      },
+      {
+        "name": "emailExample",
+        "label": "Email example",
+        "type": "email",
+        "disabled": false,
+        "placeholder": "example@email.com",
+        "defaultValue": ""
+      },
+      {
+        "name": "passwordExample",
+        "label": "Password example",
+        "type": "password",
+        "disabled": false,
+        "placeholder": "password",
+        "defaultValue": ""
+      },
+      {
+        "name": "textExample",
+        "label": "Text example",
+        "type": "text",
+        "disabled": false,
+        "placeholder": "text example",
+        "defaultValue": "text example"
+      },
+      {
+        "name": "selectExample",
+        "label": "Select example",
+        "type": "select",
+        "disabled": false,
+        "placeholder": "",
+        "defaultValue": "option1",
+        "options": [
+          {
+            "key": "option1",
+            "value": "option1"
+          },
+          {
+            "key": "option2",
+            "value": "option2"
+          },
+          {
+            "key": "option3",
+            "value": "option3"
+          }
+        ]
+      },
+      {
+        "name": "multiselectExample",
+        "label": "Multiselect Example",
+        "type": "multiselect",
+        "disabled": false,
+        "placeholder": "",
+        "defaultValue": [
+          "option1",
+          "option2"
+        ],
+        "options": [
+          {
+            "key": "option1",
+            "value": "option1"
+          },
+          {
+            "key": "option2",
+            "value": "option2"
+          },
+          {
+            "key": "option3",
+            "value": "option3"
+          }
+        ]
+      },
+      {
+        "name": "radioExample",
+        "label": "Radio example",
+        "type": "radio",
+        "disabled": false,
+        "placeholder": "",
+        "defaultValue": "option1",
+        "options": [
+          {
+            "key": "option1",
+            "value": "option1"
+          },
+          {
+            "key": "option2",
+            "value": "option2"
+          },
+          {
+            "key": "option3",
+            "value": "option3"
+          }
+        ]
+      },
+      {
+        "name": "checkboxExample",
+        "label": "Checkbox example",
+        "type": "checkbox",
+        "disabled": false,
+        "placeholder": "",
+        "defaultValue": false
+      },
+      {
+        "name": "checkboxGroupExample",
+        "label": "Checkbox group example",
+        "type": "checkboxGroup",
+        "disabled": false,
+        "placeholder": "checkboxGroupExample",
+        "defaultValue": [ "option1", "option3" ],
+        "options": [
+          {
+            "key": "option1",
+            "value": "option1"
+          },
+          {
+            "key": "option2",
+            "value": "option2"
+          },
+          {
+            "key": "option3",
+            "value": "option3"
+          }
+        ]
+      },
+
+      {
+        "name": "multiselectExampleWithNVAOptions",
+        "label": "Multiselect Example with NVA Options",
+        "type": "multiselect",
+        "disabled": false,
+        "placeholder": "",
+        "optionsNVA": "test_nva.get",
+        "optionsMap": {
+          "key": "field_in_result_nva_object_to_show_on_ui",
+          "value": "field_in_result_nva_object_to_write_in_config"
+        }
+      },
+      {
+        "name": "radioExampleWithNVAOptions",
+        "label": "Radio example With NVA Options",
+        "type": "radio",
+        "disabled": false,
+        "placeholder": "",
+        "optionsNVA": "test_nva.get",
+        "optionsMap": {
+          "key": "field_in_result_nva_object_to_show_on_ui",
+          "value": "field_in_result_nva_object_to_write_in_config"
+        }
+      },
+      {
+        "name": "checkboxGroupExampleWithNVAOptions",
+        "label": "Checkbox group example With NVA Options",
+        "type": "checkboxGroup",
+        "disabled": false,
+        "placeholder": "checkboxGroupExample",
+        "optionsNVA": "test_nva.get",
+        "optionsMap": {
+          "key": "field_in_result_nva_object_to_show_on_ui",
+          "value": "field_in_result_nva_object_to_write_in_config"
+        }
+      },
+      {
+        "name": "selectExampleWithNVAOptions",
+        "label": "Select example With NVA Options",
+        "type": "select",
+        "disabled": false,
+        "placeholder": "",
+        "optionsNVA": "test_nva.get",
+        "optionsMap": {
+          "key": "field_in_result_nva_object_to_show_on_ui",
+          "value": "field_in_result_nva_object_to_write_in_config"
+        }
+      }
+    ]
+  },
+
+  "validation": {
+    "urlExample": ["required", "string"],
+    "emailExample": ["required", "email"],
+    "passwordExample": ["required", "string", {"min_length": 4}],
+    "textExample": ["required", "string", {"max_length": 40}],
+    "selectExample": ["string"],
+    "radioExample": ["string"],
+    "checkboxExample": ["required", {"one_of": [true, false]}],
+    "checkboxGroupExample": {"list_of": "string"},
+    "multiselectExample": {"list_of": "string"},
+    "selectExampleWithNVAOptions": ["string"],
+    "radioExampleWithNVAOptions": ["string"],
+    "multiselectExampleWithNVAOptions": [{"list_of": "string"}],
+    "checkboxGroupExampleWithNVAOptions": [{"list_of": "string"}]
+  }
+}

@@ -1,0 +1,29 @@
+[{
+   "noun": "translators",
+   "verb": "create",
+   "adverb": {
+      "name": "hello-darwin",
+      "tags": {
+         "darwin": "darwin/translator",
+         "manipulator": "darwin/manipulator",
+         "permissions": "darwin/permissions",
+         "listener": "darwin/listener"
+      },
+      "darwin/translator": {
+         "storeId":"9C9C890D-80B7-4805-91DC-85537FBFCD5E",
+         "enabled":true,
+  "permissions": [
+    "SERVICE:NLP",
+    "SERVICE:PROXY",
+    "FS:WRITE"
+  ],         "vendor": {}
+      },
+      "darwin/permissions": {
+         "allowed": [
+            { "nouns": [ "system" ], "verbs": [ "get", "create" ] }
+         ],
+         "denied": []
+      }
+   }
+}]
+
