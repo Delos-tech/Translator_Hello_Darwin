@@ -1,6 +1,6 @@
 module.exports = {
-    translatorId : process.env.TRANSLATOR_ID || '160985ae-833c-4184-a941-065e244938dc',
+    translatorId : process.env.TRANSLATOR_ID || 'bdc60744-14fb-4024-acee-a86d7db1ff80',
     storagePath  : process.env.STORAGE_PATH || 'etc/',
-    mqttEndpoint : process.env.MQTT_ENDPOINT || 'tcp://10.1.1.100:1883',
-    accessToken  : process.env.ACCESS_TOKEN || '26ad0950-b480-4365-b47e-4c84df029aaa'
+    mqttEndpoint : process.env.MQTT_ENDPOINT || 'tcp://10.1.1.120:1883',
+    accessToken  : process.env.ACCESS_TOKEN || 'c0bcdf82-162f-4c6c-85d2-a86ca3da332a'
 };
